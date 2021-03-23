@@ -1,0 +1,613 @@
+/* load fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oregano&display=swap');
+
+
+/* ------- General ------- */
+* {
+    font-family: Oswald, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000000
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 2.5em; /* 40px */ 
+    font-weight: 500;
+    margin-bottom: 4%;
+}
+/* ============================================ */ 
+
+
+/* ------- Navigation ------- */
+div.banner p {
+    font-weight: 200;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 20px; /* want the size to be fixed */ 
+    padding: 5px 0;
+}
+
+div.banner {
+    background-color: #B7875D;
+    height: 40px;
+}
+
+div.nav-bar {
+    margin: 0 2%;
+    margin-top: 1%;
+}
+
+p.logo a {
+    font-family: Oregano, monospace;
+    font-size: 2.5em; /* 40px */ 
+    display: inline;
+    float: left;
+    color: #FFFFFF;
+}
+
+nav:not([main-pg]) p.logo a {
+    color: #000000;
+}
+
+div.nav-bar li {
+    display: inline;
+    text-transform: uppercase;
+    font-size: 1.4em; /* 25px */ 
+    font-weight: 500;
+    margin-right: 2%;
+}
+
+div.nav-bar a {
+    color: #FFFFFF;
+}
+
+nav:not([main-pg]) div.nav-bar a {
+    color: #000000;
+}
+
+div.nav-bar ul {
+    text-align: right;
+}
+
+span.nav-count {
+    font-weight: 300;
+    font-size: .7em;
+}
+/* ============================================ */ 
+
+
+/* ------- Hero ------- */
+div.hero img {
+    max-width: 100%;
+    height: auto;
+}
+
+div.hero {
+    position: relative;
+    top: -80px;
+    z-index: -1; /* background */ 
+    margin-bottom: -70px;
+}
+
+div.welcome-msg {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+}
+
+div.welcome-msg h1 {
+    text-transform: uppercase;
+    font-size: 3.75em; /* 60px */ 
+    font-weight: 500;
+    margin-bottom: 3%;
+    color: #FFFFFF;
+}
+
+div.welcome-msg button {
+    text-transform: uppercase;
+    font-size: 1.5625em; /* 25px */ 
+    font-weight: 500;
+    padding: 1% 4%;
+    border: none;
+    background-color: #B7875D;
+    outline: none;
+    cursor: pointer;
+}
+
+div.welcome-msg button a {
+    color: #FFFFFF;
+    outline: none;
+}
+/* ============================================ */ 
+
+
+/* ------- Monthly Favorite ------- */
+div.monthly-fav {
+    margin: 8% 13%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 8%;
+}
+
+div.monthly-fav img {
+    max-width: 100%;
+    height: auto;
+}
+
+div.monthly-desc {
+    margin: 3% 6%;
+}
+
+div.monthly-desc p {
+    font-size: 1.4em; /* 24px */ 
+    font-weight: 300;
+    margin-bottom: 8%;
+}
+
+div.monthly-desc button {
+    text-transform: uppercase;
+    font-size: 1.5625em; /* 25px */ 
+    font-weight: 500;
+    padding: 3% 11%;
+    border: none;
+    outline: none;
+    background-color: #B7875D;
+}
+
+div.monthly-desc button a {
+    color: #FFFFFF;
+    outline: none;
+}
+/* ============================================ */ 
+
+
+/* ------- Order Steps ------- */
+div.logistic {
+    background-color: #FFF8E7;
+    padding: 1% 13%;
+    padding-bottom: 4%;
+    height: 230px;
+}
+
+div.order-steps {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+div.order-steps i {
+    font-size: 4.2em;
+    margin-bottom: 13%;
+}
+
+div.order-steps p {
+    font-size: 1.4em; /* 24px */ 
+    font-weight: 300;
+}
+
+div.order-steps div {
+    text-align: center;
+}
+
+div.order-steps div#step1 {
+    position: absolute;
+    left: 13%;
+}
+
+div.order-steps div#step2 {
+    position: absolute;
+    left: 45%;
+}
+
+div.order-steps div#step3 {
+    position: absolute;
+    right: 13%;
+}
+/* ============================================ */ 
+
+
+/* ------- Footer ------- */
+footer {
+    margin-top: 7%;
+    background-color: #B7875D;
+    padding: 2% 13%;
+    padding-right: 11.5%
+}
+
+footer li {
+    text-transform: uppercase;
+    list-style: none;
+    font-size: 1.4em; /* 25px */ 
+    font-weight: 500;
+    margin-right: 2%;
+    color: #FFFFFF;
+}
+
+footer i {
+    font-size: 1.5em; /* 25px */ 
+}
+
+ul.footer-tabs li {
+    margin-bottom: 5px;
+}
+
+ul.footer-tabs {
+    display: inline-block;
+    width: 200px;
+}
+
+ul.social-media {
+    display: inline;
+    overflow: auto;
+}
+
+ul.social-media li {
+    float: right;
+}
+
+ul.footer-tabs a {
+    color: #FFFFFF;
+}
+/* ============================================ */ 
+
+
+/* ------- Menu ------- */
+div.browsing {
+    margin: 0 13%;
+    margin-top: 3.4%;
+}
+
+div.view-all {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10%;
+    row-gap: 5%;
+}
+
+div.item img {
+    max-width: 100%;
+    height: auto;
+}
+
+div.item {
+    text-align: center;
+}
+
+h3.title {
+    text-transform: uppercase;
+    font-size: 1.25em; /* 20px */ 
+    font-weight: 500;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+p.price {
+    text-transform: capitalize;
+    font-size: 1em; /* 16px */ 
+    font-weight: 300;
+}
+
+h3.title a:hover {
+    color: #B7875D;
+}
+/* ============================================ */ 
+
+
+/* ------- Individual Item ------- */
+div.selection {
+    margin: 3.4% 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-right: 13%;
+}
+
+div.selection img {
+    max-width: 100%;
+    height: auto;
+}
+
+div.customize {
+    margin: 6.8% 10.2%;
+    margin-right: 0;
+}
+
+div.customize h2 {
+    font-size: 3.125em; /* 50px */ 
+    font-weight: 600;
+    line-height: 110%;
+    margin-bottom: 2%;
+}
+
+div.customize .selection-label {
+    font-size: 1em; /* 16px */ 
+    font-weight: 400;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 2%;
+}
+
+p.glaze-option {
+    display: inline-block;
+    border: 2px #000000 solid;
+    font-size: .875em; /* 14px */ 
+    text-transform: uppercase;
+    text-align: center;
+    padding: 6% 0;
+    margin-top: -2px;   /* get rid of double borders */
+    margin-left: -2px;
+    cursor: pointer;
+}
+
+p.glaze-option:hover {
+    color: #B7875D;
+    border: 2px #B7875D solid;
+    z-index: 2;
+}
+
+div.glaze-selection {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+label.quantity {
+    margin-top: 3.4%;
+}
+
+button.add-to-cart {
+    display: block;
+    margin-top: 17%;
+    text-transform: uppercase;
+    font-size: 1.375em; /* 22px */ 
+    font-weight: 500;
+    padding: 1% 4%;
+    border: none;
+    background-color: #B7875D;
+    width: 100%;
+    padding: 2% 0;
+    color: #FFFFFF;
+    outline: none;
+    cursor: pointer;
+}
+
+p.rating {
+    text-transform: uppercase;
+    margin-bottom: 6%;
+}
+
+p span.review-divider {
+    padding-right: 1%;
+}
+
+p.rating i.fas {
+    color: #B7875D;
+}
+/* ============================================ */ 
+
+
+/* ------- About Us ------- */
+div.about {
+    margin: 6% 13%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4%;
+}
+
+div.about img {
+    max-width: 100%;
+    height: auto;
+}
+
+div.about-bio h2 {
+    font-weight: 600;
+    font-size: 2.5em; /* 40px */
+    margin-bottom: 6.8%;
+}
+
+div.about-bio p {
+    font-weight: 300;
+    font-size: 1.5em; /* 24px */
+}
+/* ============================================ */ 
+
+
+/* ------- Contact Us ------- */
+div.contact-us{
+    margin: 6% 13%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4%;
+}
+
+div.contact-us iframe {
+    width: 100%;
+    height: 580px;
+    border: 0;
+}
+
+div.contact-us h2 {
+    font-weight: 600;
+    font-size: 2.5em; /* 40px */
+    margin-bottom: 6.8%;
+}
+
+div.contact-us p {
+    font-weight: 300;
+    font-size: 1.5em; /* 24px */
+    margin-bottom: 3.4%;
+}
+/* ============================================ */ 
+
+
+/* ------- Shopping Cart ------- */
+
+div.shopping{
+    margin: 6% 13%;
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    column-gap: 12.5%;
+}
+
+div.cart-detail {
+    border-bottom: 1px #949191 solid;
+}
+
+div.cart-detail h2 {
+    font-size: 1.5625em; /* 25px */
+    margin-bottom: 1%;
+}
+
+div.cart-detail table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr#table-header {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.375em; /* 22px */
+    height: 50px;
+    padding: 0 2%;
+}
+
+tr#table-header th {
+    border-top: 1px solid #949191;
+    border-bottom: 1px solid #949191;
+}
+
+tr.specific-item td {
+    padding: 2% 0;
+}
+
+td.cart-img img {
+    width: 95%;
+}
+
+div.cart-detail th, div.cart-detail td {
+    width: 50%;
+}
+
+
+td.cart-img {
+    text-align: left;
+}
+
+
+div.cart-detail th {
+    padding: 0 2%;
+}
+
+table, td {
+    vertical-align: top;
+}
+
+td.item-detail h3 {
+    text-transform: uppercase;
+    font-size: 1.375em; /* 22px */
+    margin-bottom: 8%;
+    margin-right: 25%;
+}
+
+td.item-detail p {
+    text-transform: capitalize;
+    font-size: .9375em; /* 15px */
+    font-weight: 300;
+}
+
+td.item-detail span {
+    text-transform: initial;
+}
+
+span.cart-edit {
+    padding-left: 5px;
+    color: #B7875D;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+td.quantity-detail, td.price-detail {
+    text-align: center;
+}
+
+td.price-detail p {
+    font-size: .9375em; /* 15px */
+}
+
+td.quantity-detail p {
+    font-size: .9375em; /* 15px */
+    font-weight: 300;
+    border: 2px black solid;
+    width: 80%;
+    margin: 0 auto;
+}
+
+td.quantity-detail i.fas {
+    font-size: .75em; 
+    vertical-align: middle;
+}
+
+i.fa-minus {
+    float: left;
+    padding-top: 8%;
+    padding-left: 9%;
+    cursor: pointer;
+}
+
+i.fa-plus {
+    float: right;
+    padding-top: 8%;
+    padding-right: 9%;
+    cursor: pointer;
+}
+
+i.fa-times{
+    cursor: pointer;
+}
+
+.order-summary {
+    border: 1px black solid;
+    margin-top: 44px;
+    align-self: start;
+    padding: 5%;
+}
+
+.order-summary h2 {
+    text-transform: uppercase;
+    font-size: 1.375em; /* 22px */
+    margin-bottom: 10%;
+}
+
+.order-summary p {
+    text-transform: uppercase;
+    font-size: .9375em; /* 15px */
+    font-weight: 500;
+    margin-bottom: 3%;
+}
+
+span.subtotal, span.shipping {
+    float: right;
+}
+
+.order-summary button {
+    display: block;
+    margin-top: 17%;
+    text-transform: uppercase;
+    font-size: 1.222em; /* 18px */ 
+    font-weight: 400;
+    padding: 3% 4%;
+    border: none;
+    background-color: #B7875D;
+    width: 100%;
+    padding: 2% 0;
+    color: #FFFFFF;
+    outline: none;
+    cursor: pointer;
+}
+
+/* ============================================ */ 
