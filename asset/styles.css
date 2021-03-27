@@ -76,7 +76,7 @@ div.nav-bar ul {
     text-align: right;
 }
 
-span.nav-count {
+span#nav-count {
     font-weight: 300;
     font-size: .7em;
 }
@@ -346,12 +346,12 @@ p.glaze-option {
 }
 
 p.glaze-option:hover {
-    color: #B7875D;
-    border: 2px #B7875D solid;
-    z-index: 2;
+    color: #B7875D !important;
+    border: 2px #B7875D solid !important;
+    z-index: 2 !important;
 }
 
-div.glaze-selection {
+div#glaze-selection {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
@@ -360,9 +360,9 @@ label.quantity {
     margin-top: 3.4%;
 }
 
-button.add-to-cart {
+button#add-to-cart {
     display: block;
-    margin-top: 17%;
+    margin-top: 20%;
     text-transform: uppercase;
     font-size: 1.375em; /* 22px */ 
     font-weight: 500;
@@ -388,6 +388,22 @@ p span.review-divider {
 p.rating i.fas {
     color: #B7875D;
 }
+
+#notification {
+    width: 170px;
+    padding: 3px;
+    position: absolute;
+    background: #B7875D;
+    padding: 10px;
+    top: 110px;
+    right: 4%;
+    color: #FFFFFF;
+    font-size: 1.15em;
+    font-weight: 300;
+    border: 1px solid #949191;
+    display: none;
+   }
+
 /* ============================================ */ 
 
 
@@ -454,9 +470,6 @@ div.shopping{
     column-gap: 12.5%;
 }
 
-div.cart-detail {
-    border-bottom: 1px #949191 solid;
-}
 
 div.cart-detail h2 {
     font-size: 1.5625em; /* 25px */
@@ -481,8 +494,8 @@ tr#table-header th {
     border-bottom: 1px solid #949191;
 }
 
-tr.specific-item td {
-    padding: 2% 0;
+tr td {
+    padding: 4% 0;
 }
 
 td.cart-img img {
@@ -514,7 +527,7 @@ td.item-detail h3 {
     margin-right: 25%;
 }
 
-td.item-detail p {
+label.flavor-picked {
     text-transform: capitalize;
     font-size: .9375em; /* 15px */
     font-weight: 300;
@@ -590,7 +603,7 @@ i.fa-times{
     margin-bottom: 3%;
 }
 
-span.subtotal, span.shipping {
+span#subtotal, span#shipping {
     float: right;
 }
 
@@ -608,6 +621,17 @@ span.subtotal, span.shipping {
     color: #FFFFFF;
     outline: none;
     cursor: pointer;
+}
+
+p#empty-bag {
+    font-weight: 300;
+    border-top: 1px solid #949191;
+    padding-top: 3%;
+    display: none;
+}
+
+p#empty-bag a {
+    text-decoration: underline;
 }
 
 /* ============================================ */ 

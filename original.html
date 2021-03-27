@@ -8,13 +8,14 @@
       <link rel="stylesheet" href="asset/styles.css">
       <!-- Package for icons -->
       <script src="https://kit.fontawesome.com/f5e602ec7d.js" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
       <!-- Title -->
       <title>Original Cinnamon Roll</title>
   </head>
-  <body>
+  <body onload="cookies()">
 
     <!-- Navigation -->
-    <nav>
+    <nav id="main-pg">
 
       <div class="banner">
         <p>Free shipping on orders $50 +</p>
@@ -26,7 +27,7 @@
           <li><a class="nav-link" href="browsing.html">Menu</a></li>
           <li><a class="nav-link" href="about.html">Our Story</a></li>
           <li><a class="nav-link" href="#">Event Ordering</a></li>
-          <li><a class="nav-link" href="shoppingCart.html"><i class="fas fa-shopping-cart"></i> <span class="nav-count">1</span></a></li>
+          <li><a class="nav-link" href="shoppingCart.html"><i class="fas fa-shopping-cart"></i> <span id="nav-count">1</span></a></li>
         </ul>
       </div>
 
@@ -35,38 +36,39 @@
     <!-- Selection Detail -->
     <div class= "selection">
 
-      <img src="asset/img/Sweet-potato-cinnamon-rolls-veganricha-9420-2-1.jpg" alt="A original cinnamon roll on a plate">
+      <img src="asset/img/Sweet-potato-cinnamon-rolls-veganricha-9420-2-1.jpg" alt="An original cinnamon roll on a plate">
 
       <div class="customize">
-
         <h2>original cinnamon roll</h2>
-
-        <p class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-          <span class="review-divider">|</span> 36 Reviews</p>
+        <p class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half"></i>
+          <span class="review-divider">|</span> 20 Reviews</p>
 
         <div class="glaze">
           <label class="selection-label">glaze</label>
-          <div class="glaze-selection">
-            <p class="glaze-option">None</p>
-            <p class="glaze-option">Vanilla-milk</p>
-            <p class="glaze-option">Sugar-milk</p>
-            <p class="glaze-option">Double-chocolate</p>
+          <div id="glaze-selection">
+            <p class="glaze-option" id="none">None</p>
+            <p class="glaze-option" id="vanilla">Vanilla-milk</p>
+            <p class="glaze-option" id="sugar">Sugar-milk</p>
+            <p class="glaze-option" id="chocolate">Double-chocolate</p>
           </div>
         </div>
 
-        <!-- can't make dropdown menu look the same as the prototype without JavaScript-->
         <label class="quantity selection-label">quantity(roll)</label>
-          <select name="quantity" id="quantity-selection">
-            <option value="">&nbsp;</option>
+        <select name="quantity" id="quantity-selection">
+            <option value="0">&nbsp;</option>
             <option value="1">1</option>
             <option value="3">3</option>
             <option value="6">6</option>
             <option value="12">12</option>
-          </select>
+        </select>
 
-        <button class="add-to-cart">customize to add to cart</button>
+        <button id="add-to-cart">customize to add to cart</button>
       </div>
+    </div>
 
+    <!-- Notification -->
+    <div id="notification">
+      <p> Item added to your bag <i class="fas fa-laugh-squint"></i></p>
     </div>
 
     <!-- Footer -->
@@ -86,5 +88,6 @@
       
     </footer>
 
+    <script type="text/javascript" src="javaScript.js"></script>
   </body>
 </html>

@@ -8,10 +8,11 @@
       <link rel="stylesheet" href="asset/styles.css">
       <!-- Package for icons -->
       <script src="https://kit.fontawesome.com/f5e602ec7d.js" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
       <!-- Title -->
-      <title>Contact Us</title>
+      <title>Shopping Cart</title>
   </head>
-  <body>
+  <body onload="init()">
 
     <!-- Navigation -->
     <nav>
@@ -26,7 +27,7 @@
           <li><a class="nav-link" href="browsing.html">Menu</a></li>
           <li><a class="nav-link" href="about.html">Our Story</a></li>
           <li><a class="nav-link" href="#">Event Ordering</a></li>
-          <li><a class="nav-link" href="shoppingCart.html"><i class="fas fa-shopping-cart"></i> <span class="nav-count">1</span></a></li>
+          <li><a class="nav-link" href="shoppingCart.html"><i class="fas fa-shopping-cart"></i><span id="nav-count">1</span></a></li>
         </ul>
       </div>
 
@@ -37,23 +38,14 @@
       <!-- Cart Detail -->
       <div class="cart-detail">
 
-        <table>
-          <h2> your cart (<span id= "cart-count">1</span>)</h2>
+        <table id="view-cart">
+          <h2>your cart (<span id= "cart-count">0</span>)</h2>
+          <p id="empty-bag">Your bag is currently empty. <a href="browsing.html">Continue shopping.</a></p>
           <tr id="table-header">
             <th colspan="2">item</th>
             <th>quantity</th>
             <th>price</th>
             <th></th>
-          </tr>
-          <tr class="specific-item">
-            <td class="cart-img"><img src="asset/img/Sweet-potato-cinnamon-rolls-veganricha-9420-2-1.jpg" alt="A blackberry cinnamon roll on a plate"></td>
-            <td class="item-detail">
-              <h3>blackberry cinnamon roll</h3>
-              <p>glaze: <span class="flavor-picked">Vanilla-milk </span><span class="cart-edit">edit</span></p>
-            </td>
-            <td class="quantity-detail"><p><i class="fas fa-minus"></i> <span class="quantity"> 2 </span> <i class="fas fa-plus"></i></p></td>
-            <td class="price-detail"><p class="item-price">$25</p></td>
-            <td class="remove"><i class="fas fa-times"></i></td>
           </tr>
         </table>
 
@@ -64,8 +56,8 @@
 
         <h2> order summary </h2>
 
-        <p>subtotal<span class="subtotal">$25</span></p>
-        <p>shipping<span class="shipping">tbd</span></p>
+        <p>subtotal<span id="subtotal">tbd</span></p>
+        <p>shipping<span id="shipping">tbd</span></p>
 
         <button>checkout</button>
       </div>
@@ -88,5 +80,6 @@
       
     </footer>
 
+    <script type="text/javascript" src="javaScript.js"></script>
   </body>
 </html>
