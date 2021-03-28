@@ -140,7 +140,9 @@ function cookies() {
     if (typeof(Storage) !== "undefined") {
         if (localStorage.clickcount) {
             document.getElementById("nav-count").innerText = localStorage.clickcount;
+            if (document.getElementById("cart-count")) {
             document.getElementById("cart-count").innerText = localStorage.clickcount;
+            }
         }
         else {
             localStorage.clickcount = 0;
@@ -185,7 +187,7 @@ $('button#add-to-cart').click(function(){
         $('#notification').delay(1500).fadeOut();
     }});
 
-addToCartBtn.addEventListener('click', updateCartQuantity);
+if (addToCartBtn) addToCartBtn.addEventListener('click', updateCartQuantity);
 /* --------------- End of Update Shopping Cart --------------- */
 
 /* --------------- Delete An Item --------------- */
