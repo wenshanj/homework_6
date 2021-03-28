@@ -146,7 +146,9 @@ function cookies() {
         }
         else {
             localStorage.clickcount = 0;
+            if (document.getElementById("cart-count")) {
             document.getElementById("cart-count").innerText = localStorage.clickcount;
+            }
             emptyCartDisplay();
         }
     }
